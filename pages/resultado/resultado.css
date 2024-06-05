@@ -35,7 +35,6 @@ body.escuro {
     --pontuacao-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
-
 body { 
     height: 100svh;
     background: var(--bg-mobile) var(--bg-color);
@@ -90,22 +89,18 @@ header{
     height: 12px;
     border-radius: 999px;
 }
-
 main {
     padding: 32px 24px;
 }
-
 main h2 {
     font-size: 40px;
     font-weight: 300;
     color: var(--primary-text-color);
     margin-bottom: 40px;
 }
-
 main h2 strong {
     font-weight: 500;
 }
-
 .pontuacao {
     background:var(--pntuacao-bg) ;
     padding: 32px;
@@ -116,17 +111,34 @@ main h2 strong {
     border-radius: 12px;
     margin-bottom: 12px;
 }
-
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
     font-weight: 500;
 }
-
 .pontuacao p {
     color: var(--secondary-text-color);
     font-size: 18px;
 }
+
+main button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+main button:hover {
+    background: var(--purple-hover);
+    cursor: pointer;
+}
+
 @media(min-width: 1100px) {
     body{
         background: var(--bg-desktop) var(--bg-color);
